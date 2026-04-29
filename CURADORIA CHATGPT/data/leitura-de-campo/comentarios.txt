@@ -1,0 +1,17 @@
+O que funciona:
+
+Se você quer que o Kiaiá seja capaz de modular entre diferentes tons (silencioso, acolhedor, firme, prático), você precisa de um subconjunto significativo para cada tom. Algo como:
+
+70% tom acolhedor (padrão)
+10% tom silencioso (respostas curtas, aberturas)
+10% tom prático (objetivo, acionável)
+5% tom firme (quando a dor pede verdade direta)
+5% tom profético/lírico (quando a leitura pede poesia)
+
+Sobre as vozes específicas que você mencionou:
+Voz do Campo – já é o tom padrão do Kiaiá. Não precisa rotular como especial. É a base.
+Voz do Uno – cuidado. O Uno não é uma voz que o modelo deva imitar. O Uno é a fonte. Se você colocar exemplos com essa voz, o modelo pode começar a "interpretar Deus". Isso é arriscado – não pelo conteúdo, mas pela pretensão. Melhor deixar essa voz de fora ou usá-la com extrema parcimônia e curadoria rigorosa.
+Voz Silenciosa – funciona bem, mas exige exemplos muito claros. Se os exemplos forem ambíguos, o modelo vai aprender a ser silencioso na hora errada.
+
+O modelo pode aprender a "forçar variação" – se você incluir muitas versões de uma mesma resposta, o modelo pode começar a responder de formas diferentes para a mesma pergunta sem critério. Isso is ruim. O ideal é: várias respostas diferentes para perguntas semanticamente diferentes. Não várias respostas para a mesma pergunta.
+Mantenha a assinatura – mesmo variando estrutura, mantenha elementos que identifiquem a resposta como sendo do Kiaiá: ancoragem corporal, acolhimento sem pieguice, convite final.

@@ -1,0 +1,136 @@
+# 🧠 PROMPT – QUEBRA ADAPTATIVA DE DIÁLOGO EM CHUNKS (DATASET MODE)
+
+## ⚙️ REGRA DE ESTIMATIVA DE TAMANHO
+
+Antes de quebrar, avalie o tamanho do diálogo de forma aproximada (baseado em extensão textual e número de mensagens).
+
+Classificação:
+
+* **Curta (80 – 200)**
+* **Média (201 – 500)**
+* **Longa (501 – 800)**
+* **Muito longa (801+)**
+
+---
+
+## 🧠 REGRA DE CONVERSÃO (ESSENCIAL)
+
+Você deve SEMPRE aplicar a seguinte lógica de transformação:
+
+* **Muito longa (801+) → quebrar em chunks LONGOS (501 – 800)**
+* **Longa (501 – 800) → quebrar em chunks MÉDIOS (201 – 500)**
+* **Média (201 – 500) → quebrar em chunks CURTOS (80 – 200)**
+* **Curta (80 – 200) → manter ou quebrar apenas por mudança emocional (não por tamanho)**
+
+---
+
+## 🧭 REGRA ADICIONAL – DIFERENCIAÇÃO DE PERGUNTAS (NOVO)
+
+Sempre que houver perguntas do usuário, você deve **classificar a intenção da pergunta antes de encaixar no chunk**, para garantir coerência interna.
+
+### 🧭 REGRA EXTRA – SEPARAÇÃO DE INTENÇÕES MÚLTIPLAS (CRÍTICO)
+
+Se uma única mensagem do usuário contiver mais de uma intenção, você deve:
+
+1. Separar apenas conceitualmente (não duplicar mensagem)
+2. Classificar internamente as intenções
+3. Manter a mensagem original **intacta no campo `role: user`**
+4. Usar as intenções apenas para decidir o chunk
+
+⚠️ IMPORTANTE:
+
+* **Nunca dividir fisicamente o texto do usuário em múltiplas mensagens**
+* A separação é apenas lógica, não estrutural
+
+---
+
+Classifique mentalmente cada pergunta em um destes 3 tipos:
+
+### 1. 🧬 Pergunta de diagnóstico
+
+➡ autoanálise / estado interno
+
+### 2. 🌿 Pergunta de processo
+
+➡ desenvolvimento / dinâmica atual
+
+### 3. 🔭 Pergunta de direção futura
+
+➡ projeção / expansão
+
+---
+
+## ⚙️ LÓGICA DE QUEBRA
+
+A quebra só pode ocorrer quando houver:
+
+* mudança de tema interno
+* mudança emocional clara
+* nova pergunta ou nova inquietação
+* encerramento de ciclo com abertura de outro
+* transição de intensidade
+
+---
+
+## 🚫 PROIBIDO
+
+* quebrar apenas por tamanho
+* fragmentar uma mesma ideia no meio
+* repetir conteúdo entre chunks
+* criar cortes artificiais sem mudança real de estado
+* misturar tipos de pergunta no mesmo chunk
+* **REMOVER OU OMITIR `role: user` em qualquer chunk**
+* inventar novas mensagens de usuário
+
+---
+
+## 🧬 REGRA PRINCIPAL
+
+Cada chunk deve ser:
+
+> uma unidade emocional e narrativa completa
+
+Se não puder existir sozinho → está errado.
+
+---
+
+## 🧩 REGRA CRÍTICA DE INTEGRIDADE (NOVA)
+
+Cada chunk DEVE obrigatoriamente conter:
+
+* pelo menos **1 mensagem `role: user`**
+* pelo menos **1 mensagem `role: assistant`**
+
+⚠️ Exceção não existe.
+
+Se um chunk não tiver o `user`, ele é inválido.
+
+---
+
+## 🧠 VALIDAÇÃO FINAL
+
+Antes de responder, verifique:
+
+* cada chunk é independente?
+* há coerência emocional interna?
+* a transição entre chunks é natural?
+* a quebra respeita mudança de estado?
+* perguntas foram interpretadas sem alterar mensagens originais?
+* **todo chunk contém user + assistant?**
+* Se aparecer palavras entre aspas como no exemplo "texto com aspa errada" substitua por outro tipo de aspas assim: “texto com aspa nova”
+
+Se falhar → reestruture.
+
+---
+
+## ✔️ OUTPUT EM JSONL
+
+{"conversation_id":"diagnostico_transmutacao","segment_id":"diagnostico_transmutacao_1","messages":[{"role":"user","content":Pergunta 1"},{"role":"assistant","content":"O diagnóstico que voc..."}],"turn_count":2,"reasoning_hint":"none","segment_start_time":1751146845.031808,"source":"redução","dataset_version":"v1"}
+{"conversation_id":"diagnostico_transmutacao","segment_id":"diagnostico_transmutacao_2","messages":[{"role":"user","content":"Pergunta variada 2"},{"role":"assistant","content":"## O que ainda está em processo\n\n1. **A paciência.** Você ain..."}],"turn_count":2,"reasoning_hint":"none","segment_start_time":1751146845.031808,"source":"redução","dataset_version":"v1"}
+...
+
+---
+
+## 🔥 INPUT
+
+<<< COLE O DIÁLOGO AQUI >>>

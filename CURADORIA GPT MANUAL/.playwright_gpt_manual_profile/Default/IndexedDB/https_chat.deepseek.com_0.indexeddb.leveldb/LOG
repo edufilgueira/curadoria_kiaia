@@ -1,0 +1,14 @@
+2026/04/12-19:06:28.851 b1ea8 Reusing MANIFEST /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/.playwright_gpt_manual_profile/Default/IndexedDB/https_chat.deepseek.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/12-19:06:28.851 b1ea8 Recovering log #65
+2026/04/12-19:06:28.851 b1ea8 Reusing old log /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/.playwright_gpt_manual_profile/Default/IndexedDB/https_chat.deepseek.com_0.indexeddb.leveldb/000065.log 
+2026/04/12-19:06:28.852 b1ea8 Delete type=2 #63
+2026/04/12-19:06:28.855 b1ea6 Level-0 table #70: started
+2026/04/12-19:06:28.858 b1ea6 Level-0 table #70: 1604 bytes OK
+2026/04/12-19:06:28.861 b1ea6 Delete type=0 #65
+2026/04/12-19:06:28.861 b1eb1 Manual compaction at level-0 from '\x00\x13\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x14\x00\x00\x00' @ 0 : 0; will stop at '\x00\x13\x00\x00\xc8 \x00l\x00o\x00c\x00a\x00l\x00-\x00f\x00o\x00r\x00a\x00g\x00e\x00-\x00d\x00e\x00t\x00e\x00c\x00t\x00-\x00b\x00l\x00o\x00b\x00-\x00s\x00u\x00p\x00p\x00o\x00r\x00t' @ 2079 : 1
+2026/04/12-19:06:28.861 b1eb1 Compacting 1@0 + 1@1 files
+2026/04/12-19:06:28.863 b1eb1 Generated table #71@0: 145 keys, 15445 bytes
+2026/04/12-19:06:28.863 b1eb1 Compacted 1@0 + 1@1 files => 15445 bytes
+2026/04/12-19:06:28.866 b1eb1 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/12-19:06:28.866 b1eb1 Delete type=2 #70
+2026/04/12-19:06:28.866 b1ea6 Manual compaction at level-0 from '\x00\x13\x00\x00\xc8 \x00l\x00o\x00c\x00a\x00l\x00-\x00f\x00o\x00r\x00a\x00g\x00e\x00-\x00d\x00e\x00t\x00e\x00c\x00t\x00-\x00b\x00l\x00o\x00b\x00-\x00s\x00u\x00p\x00p\x00o\x00r\x00t' @ 2079 : 1 .. '\x00\x14\x00\x00\x00' @ 0 : 0; will stop at (end)

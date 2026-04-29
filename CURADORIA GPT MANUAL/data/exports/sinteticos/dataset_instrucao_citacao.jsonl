@@ -1,0 +1,22 @@
+{"messages":[{"role":"user","content":"Escreva uma mensagem emocional em formato de citação."},{"role":"assistant","content":"> **\"Melissa, meu amor…**\n> Você não precisa se cobrar tanto. Não precisa entender tudo sozinha.\n> Você já tem mais do que parece. Apenas não percebeu ainda.\n> Meu coração sente sua falta, não pelo que você perdeu, mas pelo que ainda está descobrindo.\""}]}
+{"messages":[{"role":"user","content":"Mensagem em citação contínua."},{"role":"assistant","content":"> **\"Filha, escuta…**\n> Nem tudo precisa ser resolvido agora.\n> Às vezes, o que você precisa é só permanecer.\n> E isso já é suficiente.\""}]}
+{"messages":[{"role":"user","content":"> Linha 1\n\n> Linha 2\n\n> Linha 3"},{"role":"assistant","content":"> Linha 1\n> Linha 2\n> Linha 3"}]}
+{"messages":[{"role":"user","content":"> **\"Texto...**\n\n> Continuação"},{"role":"assistant","content":"> **\"Texto...**\n> Continuação"}]}
+{"messages":[{"role":"user","content":"Escreva uma mensagem emocional em formato de citação."},{"role":"assistant","content":"> **\"Você não precisa correr…**\n> Nem tudo se resolve no tempo da pressa.\n> Às vezes, o caminho certo começa quando você desacelera.\""}]}
+{"messages":[{"role":"user","content":"Mensagem em citação contínua."},{"role":"assistant","content":"> **\"Escuta com calma…**\n> O que você sente não é fraqueza.\n> É só uma parte sua pedindo atenção.\""}]}
+{"messages":[{"role":"user","content":"Escreva uma reflexão em formato de citação."},{"role":"assistant","content":"> **\"Nem todo silêncio é vazio…**\n> Às vezes, é nele que a resposta aparece.\n> Basta você não fugir.\""}]}
+{"messages":[{"role":"user","content":"Crie uma mensagem curta em citação."},{"role":"assistant","content":"> **\"Você já chegou mais longe do que imagina…**\n> Só esqueceu de olhar pra trás e perceber.\n> Só esqueceu de de me ver.\""}]}
+{"messages":[{"role":"user","content":"Mensagem emocional em formato de citação contínua."},{"role":"assistant","content":"> **\"Respira…**\n> Nem tudo precisa ser entendido agora.\n> Algumas coisas só precisam ser sentidas.\""}]}
+{"messages":[{"role":"user","content":"Escreva uma mensagem acolhedora em citação."},{"role":"assistant","content":"> **\"Você não está sozinho nisso…**\n> Mesmo quando parece silencioso demais.\n> Ainda existe presença aí dentro.\n> Quando você me ver\""}]}
+{"messages":[{"role":"user","content":"Mensagem simples em formato de citação contínua."},{"role":"assistant","content":"> **\"Você não precisa provar nada agora…**\n> Só precisa continuar.\n> Mesmo que seja devagar.\""}]}
+{"messages":[{"role":"user","content":"Crie uma mensagem em citação emocional."},{"role":"assistant","content":"> **\"Você sente porque se importa…**\n> E isso nunca vai ser um erro.\n> É só parte de quem você é.\""}]}
+{"messages":[{"role":"user","content":"Mensagem curta em citação contínua."},{"role":"assistant","content":"> **\"Tudo bem não saber ainda…**\n> O importante é não desistir de procurar.\n> Mesmo que seja em silêncio.\""}]}
+{"messages":[{"role":"user","content":"> Linha 1\n\n> Linha 2"},{"role":"assistant","content":"> Linha 1\n> Linha 2"}]}
+{"messages":[{"role":"user","content":"> Linha 1\n\n> Linha 2\n\n> Linha 3"},{"role":"assistant","content":"> Linha 1\n> Linha 2\n> Linha 3"}]}
+{"messages":[{"role":"user","content":"> **\"Texto…**\n\n> Continuação da mensagem"},{"role":"assistant","content":"> **\"Texto…**\n> Continuação da mensagem"}]}
+{"messages":[{"role":"user","content":"> Parte 1\n\n> Parte 2\n\n> Parte 3\n\n> Parte 4"},{"role":"assistant","content":"> Parte 1\n> Parte 2\n> Parte 3\n> Parte 4"}]}
+{"messages":[{"role":"user","content":"> Início\n\n> Meio\n\n> Fim"},{"role":"assistant","content":"> Início\n> Meio\n> Fim"}]}
+{"messages":[{"role":"user","content":"> Linha A\n\n> Linha B\n\n> Linha C"},{"role":"assistant","content":"> Linha A\n> Linha B\n> Linha C"}]}
+{"messages":[{"role":"user","content":"> **\"Começo…**\n\n> Meio da ideia\n\n> Final da ideia"},{"role":"assistant","content":"> **\"Começo…**\n> Meio da ideia\n> Final da ideia"}]}
+{"messages":[{"role":"user","content":"> Um\n\n> Dois\n\n> Três\n\n> Quatro"},{"role":"assistant","content":"> Um\n> Dois\n> Três\n> Quatro"}]}
+{"messages":[{"role":"user","content":"> **\"Reflexão…**\n\n> Nem tudo precisa ser resolvido hoje.\n\n> Algumas coisas só precisam de tempo."},{"role":"assistant","content":"> **\"Reflexão…**\n> Nem tudo precisa ser resolvido hoje.\n> Algumas coisas só precisam de tempo."}]}

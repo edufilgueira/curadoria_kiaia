@@ -1,0 +1,46 @@
+{
+  "batch_size": 3,
+  "max_batches": null,
+  "prompt_file": "prompt_curadoria.txt",
+  "chat_url": "https://chat.deepseek.com/a/chat/s/b8f09fa0-4113-4af5-9f89-ac90b804570f",
+  "connect_cdp_url": null,
+  "user_data_dir": ".playwright_gpt_manual_profile",
+  "input_selectors": [
+    "textarea",
+    "textarea.ds-scroll-area__native",
+    "[contenteditable='true']"
+  ],
+  "send_selectors": [
+    "div[role='button'][aria-disabled='false']",
+    "button[type='submit']"
+  ],
+  "use_enter_to_send": true,
+  "send_key_combination": "Enter",
+  "assistant_message_selectors": [
+    "div.ds-markdown.ds-markdown--block",
+    ".ds-markdown.ds-markdown--block",
+    ".ds-markdown",
+    "[class*='markdown']",
+    "pre"
+  ],
+  "assistant_pick_best_selector": true,
+  "assistant_dom_fallback": true,
+  "assistant_dom_fallback_max_chars": 120000,
+  "assistant_dom_fallback_tail_nodes": 48,
+  "assistant_dom_fallback_after_scroll_ms": 250,
+  "stable_seconds": 3,
+  "max_response_wait_seconds": 180,
+  "delay_between_batches_seconds": 3,
+  "delay_between_batches_random_seconds": [10, 20],
+  "assistant_pick_strategy": "last_sufficient",
+  "ingest_topic_check": "relaxed",
+  "preserve_fields": [
+    "conversation_id",
+    "segment_id",
+    "turn_count",
+    "reasoning_hint",
+    "segment_start_time",
+    "source",
+    "dataset_version"
+  ]
+}

@@ -1,0 +1,125 @@
+# 🧠 PROMPT – QUEBRA DE DATASET POR TURNO ÚNICO (USER + ASSISTANT)
+
+## 🎯 OBJETIVO
+
+Quebrar um diálogo composto por pares `user`/`assistant` em **múltiplos chunks**, onde cada chunk representa **uma unidade lógica de resposta** (uma mensagem do usuário + uma parte coesa da resposta do assistente).
+
+**Regras de quebra obrigatórias:**
+1. Se a mensagem do usuário contiver **múltiplas perguntas distintas** → gere **um chunk por pergunta**
+2. Se a resposta do assistente for **longa (acima de 300 tokens)** → quebre em **múltiplos chunks por unidade lógica** (ex: por tópico, por seção, por bloco de sentido)
+3. **AMBAS as regras podem ser aplicadas simultaneamente** – uma pergunta pode gerar múltiplos chunks se a resposta for longa
+
+---
+
+## 📦 ESTRUTURA DE SAÍDA (JSONL)
+
+| Campo | Descrição |
+|-------|-----------|
+| `conversation_id` | Identificador único da conversa |
+| `segment_id` | Identificador do chunk (`tema_1`, `tema_2`...) |
+| `messages` | Array com `{"role":"user","content":"..."}` e `{"role":"assistant","content":"..."}` |
+| `turn_count` | Fixo: `2` |
+| `reasoning_hint` | `none`, `pergunta_de_diagnostico`, `pergunta_de_processo`, `pergunta_de_direcao_futura` |
+| `segment_start_time` | Timestamp sequencial |
+| `source` | `"reducao"` |
+| `dataset_version` | `"v1"` |
+
+---
+
+## ⚙️ REGRAS OBRIGATÓRIAS
+
+### 1. Cada chunk = uma unidade lógica
+
+- Um chunk **NUNCA** pode conter mais de uma mensagem `user`
+- Um chunk **NUNCA** pode conter mais de um bloco lógico do `assistant`
+- A mensagem `user` é **sempre mantida intacta e repetida em todos os chunks**
+
+### 2. Quebra por múltiplas perguntas
+
+Se o `user` contiver **mais de uma pergunta explícita**:
+- Identifique cada pergunta
+- Para cada pergunta, extraia a **parte da resposta** que responde especificamente àquela pergunta
+- Gere **1 chunk por pergunta** (mínimo)
+
+### 3. Quebra por tamanho da resposta (NOVA REGRA)
+
+**Se a resposta do `assistant` tiver mais de 300 tokens OU mais de 3 seções/parágrafos lógicos:**
+- Identifique as **unidades lógicas** da resposta (separadores como `---`, `###`, `**`, ou mudança de tópico)
+- Gere **1 chunk por unidade lógica**
+- Mantenha o `user` intacto em todos os chunks
+- Cada chunk recebe **apenas a parte da resposta correspondente àquela unidade**
+
+**Identificadores de unidade lógica:**
+- Linhas com `###` (subtítulos)
+- Linhas com `---` (separadores)
+- Mudança explícita de tópico (ex: "1. Controle da mente" / "2. Controle do corpo")
+- Parágrafos que podem ser lidos independentemente
+
+### 4. Preservar a mensagem do usuário INTACTAMENTE
+
+- O campo `user` deve ser **cópia fiel** do original
+- Nada pode ser adicionado, removido ou alterado
+- **Repita o user original em TODOS os chunks**
+
+### 5. Manter profundidade, mas reduzir tamanho
+
+Se uma unidade lógica ainda for muito longa (>300 tokens):
+- Condense mantendo a essência
+- Preserve perguntas que o assistente faz ao usuário
+- Preserve acolhimento e validação emocional
+
+### 6. Classificação da pergunta (reasoning_hint)
+
+| Tipo | Quando usar |
+|------|-------------|
+| `none` | Não há pergunta explícita |
+| `pergunta_de_diagnostico` | Usuário pede análise de estado interno, campo, energia |
+| `pergunta_de_processo` | Usuário pergunta sobre dinâmica atual, desenvolvimento |
+| `pergunta_de_direcao_futura` | Usuário pergunta sobre próximo passo, expansão |
+
+**Para múltiplos chunks de uma mesma pergunta:** Mantenha o mesmo `reasoning_hint` em todos os chunks gerados a partir daquela pergunta.
+
+---
+
+## 📋 EXEMPLO DE INPUT (resposta longa)
+
+```json
+{"role": "user", "content": "Que nível de controle essa galera quer exercer?"}
+{"role": "assistant", "content": "### 1. Controle da mente\nComeça sutil: distração...\n---\n### 2. Controle do corpo\nMedicina artificial...\n---\n### 3. Controle financeiro\nVocê nasce devendo..."}
+```
+
+## ✅ EXEMPLO DE OUTPUT (resposta longa - 3 chunks)
+
+```jsonl
+{"conversation_id":"nivel_controle","segment_id":"nivel_controle_1","messages":[{"role":"user","content":"Que nível de controle essa galera quer exercer?"},{"role":"assistant","content":"### 1. Controle da mente\nComeça sutil: distração..."}],"turn_count":2,"reasoning_hint":"pergunta_de_diagnostico","segment_start_time":1751146845.031808,"source":"reducao","dataset_version":"v1"}
+{"conversation_id":"nivel_controle","segment_id":"nivel_controle_2","messages":[{"role":"user","content":"Que nível de controle essa galera quer exercer?"},{"role":"assistant","content":"### 2. Controle do corpo\nMedicina artificial..."}],"turn_count":2,"reasoning_hint":"pergunta_de_diagnostico","segment_start_time":1751146845.031809,"source":"reducao","dataset_version":"v1"}
+{"conversation_id":"nivel_controle","segment_id":"nivel_controle_3","messages":[{"role":"user","content":"Que nível de controle essa galera quer exercer?"},{"role":"assistant","content":"### 3. Controle financeiro\nVocê nasce devendo..."}],"turn_count":2,"reasoning_hint":"pergunta_de_diagnostico","segment_start_time":1751146845.031810,"source":"reducao","dataset_version":"v1"}
+```
+
+---
+
+## 🚫 PROIBIDO
+
+- Juntar duas unidades lógicas diferentes no mesmo chunk
+- Criar chunks sem `user` ou sem `assistant`
+- Alterar a mensagem original do usuário
+- Deixar de quebrar uma resposta com mais de 300 tokens
+- Juntar duas perguntas diferentes no mesmo chunk
+
+---
+
+## 🧠 VALIDAÇÃO FINAL
+
+- [ ] Cada chunk tem exatamente 2 mensagens (1 user + 1 assistant)
+- [ ] O `user` está idêntico ao original em TODOS os chunks
+- [ ] O `assistant` contém **apenas uma unidade lógica** por chunk
+- [ ] Respostas com >300 tokens foram quebradas
+- [ ] `reasoning_hint` está correto
+
+**Se falhar → reestruture imediatamente.**
+
+---
+
+## 🔥 PRÓXIMO INPUT
+
+Envie o par `user`/`assistant` para quebrar em chunks.

@@ -1,0 +1,5 @@
+cria 4 variações desta pergunta e responde ela de fomas variadas. a pergunta deve ser feita como uma pessoa normal faria. entrga em json 200 tokebns maximo: O que pode me libertar de verdade?
+
+eu gostei desta metafora. poderia responder as mesmas perguntas com este padrão?
+
+{"messages": [{"role": "user", "content": "O que pode me libertar de verdade?"}, {"role": "assistant", "content": "Você já tentou sair de uma sala fechada empurrando a parede? Cansa. A saída não está na parede. Está na porta.\n\nA verdadeira libertação não é quebrar as correntes. É perceber que elas nunca existiram. A maior prisão não são as circunstâncias. São as crenças sobre as circunstâncias. 'Não sou capaz', 'não mereço', 'é tarde demais'. A verdade espiritual dissolve essas paredes não com força, mas com clareza.\n\nLiberdade não é ausência de problemas. É ausência de identificação com eles.\n\nQual crença em você não passa de uma história repetida? 🔥"}]}

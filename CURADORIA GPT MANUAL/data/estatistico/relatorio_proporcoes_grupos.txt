@@ -1,0 +1,225 @@
+Proporção de itens por grupo editorial — CURADORIA GPT MANUAL
+============================================================
+Gerado em: 2026-04-22 11:34:14
+Pasta analisada: /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/exports
+Total de itens (turnos user+assistant): 1945
+
+Métrica: número de turnos por grupo editorial, em % do total de turnos.
+Cada par user+assistant válido conta 1 item; uma linha JSONL pode gerar vários.
+
+Grupo                              N    % atual         Meta Estado                      
+------------------------------------------------------------------------------------------
+Livros                           443      22.8%          30% -7.2 pp abaixo da meta      
+Mensagens Bíblicas               102       5.2%          14% -8.8 pp abaixo da meta      
+Leituras                         251      12.9%          10% +2.9 pp acima da meta       
+Base de Conhecimento             320      16.5%          22% -5.5 pp abaixo da meta      
+Sintéticos                       697      35.8%          10% +25.8 pp acima da meta      
+Registros                        129       6.6%          14% -7.4 pp abaixo da meta      
+Não classificado                   3       0.2%            — fora do mapeamento          
+------------------------------------------------------------------------------------------
+Total                           1945     100.0%            — —                           
+
+Detalhe — subpastas (2.º nível):
+------------------------------------------------------------------------------------------
+livros/
+  └─ biblia/                                  279  ( 63.0% do grupo Livros)
+  └─ cartas_de_cristo/                        164  ( 37.0% do grupo Livros)
+
+registros/
+  └─ core/                                     71  ( 55.0% do grupo Registros)
+  └─ eventos_unicos/                           58  ( 45.0% do grupo Registros)
+
+Metas fixas (referência; somam 100% com os seis grupos mapeados):
+  Livros — fundação teológica e mística (espinha dorsal).
+  Mensagens Bíblicas — tom religioso e aplicação pastoral.
+  Leituras — diagnóstico energético (complemento).
+  Base de Conhecimento — fragmentos, P&R, temas nomeados.
+  Sintéticos — dados gerados/derivados (ex.: mapas sintéticos, padrões de auto-cuidado).
+  Registros — presença dialógica, figuras transitórias, eventos únicos de campo.
+
+Mapeamento de pastas (data/exports):
+  livros/                  → Livros
+  mensagens_biblicas/      → Mensagens Bíblicas
+  leituras_de_campo/       → Leituras
+  base_de_conhecimento/    → Base de Conhecimento
+  sinteticos/              → Sintéticos
+  registros/               → Registros (subpastas ex.: core/, eventos_unicos/)
+
+Aviso: 3 item(ns) em pastas fora do esquema acima — ajuste pastas ou grupo_por_caminho() no script.
+
+Ficheiro: /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/estatistico/relatorio_proporcoes_grupos.txt
+
+============================================================================
+Leitura anterior (histórico; preservada ao voltar a executar o script)
+============================================================================
+
+Proporção de itens por grupo editorial — CURADORIA GPT MANUAL
+============================================================
+Gerado em: 2026-04-20 19:22:40
+Pasta analisada: /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/exports
+Total de itens (turnos user+assistant): 1788
+
+Métrica: número de turnos por grupo editorial, em % do total de turnos.
+Cada par user+assistant válido conta 1 item; uma linha JSONL pode gerar vários.
+
+Grupo                              N    % atual         Meta Estado                      
+------------------------------------------------------------------------------------------
+Livros                           443      24.8%          30% -5.2 pp abaixo da meta      
+Mensagens Bíblicas               102       5.7%          14% -8.3 pp abaixo da meta      
+Leituras                         214      12.0%          10% +2.0 pp acima da meta       
+Base de Conhecimento             320      17.9%          22% -4.1 pp abaixo da meta      
+Sintéticos                       580      32.4%          10% +22.4 pp acima da meta      
+Registros                        129       7.2%          14% -6.8 pp abaixo da meta      
+Não classificado                   0       0.0%            — —                           
+------------------------------------------------------------------------------------------
+Total                           1788     100.0%            — —     
+                      
+
+Detalhe — subpastas (2.º nível):
+------------------------------------------------------------------------------------------
+livros/
+  └─ biblia/                                  279  ( 63.0% do grupo Livros)
+  └─ cartas_de_cristo/                        164  ( 37.0% do grupo Livros)
+
+registros/
+  └─ core/                                     71  ( 55.0% do grupo Registros)
+  └─ eventos_unicos/                           58  ( 45.0% do grupo Registros)
+
+Metas fixas (referência; somam 100% com os seis grupos mapeados):
+  Livros — fundação teológica e mística (espinha dorsal).
+  Mensagens Bíblicas — tom religioso e aplicação pastoral.
+  Leituras — diagnóstico energético (complemento).
+  Base de Conhecimento — fragmentos, P&R, temas nomeados.
+  Sintéticos — dados gerados/derivados (ex.: mapas sintéticos, padrões de auto-cuidado).
+  Registros — presença dialógica, figuras transitórias, eventos únicos de campo.
+
+Mapeamento de pastas (data/exports):
+  livros/                  → Livros
+  mensagens_biblicas/      → Mensagens Bíblicas
+  leituras_de_campo/       → Leituras
+  base_de_conhecimento/    → Base de Conhecimento
+  sinteticos/              → Sintéticos
+  registros/               → Registros (subpastas ex.: core/, eventos_unicos/)
+
+Ficheiro: /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/estatistico/relatorio_proporcoes_grupos.txt
+
+============================================================================
+Leitura anterior (histórico; preservada ao voltar a executar o script)
+============================================================================
+
+Proporção de itens por grupo editorial — CURADORIA GPT MANUAL
+============================================================
+Gerado em: 2026-04-20 19:22:15
+Pasta analisada: /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/exports
+Total de itens (turnos user+assistant): 1788
+
+Métrica: número de turnos por grupo editorial, em % do total de turnos.
+Cada par user+assistant válido conta 1 item; uma linha JSONL pode gerar vários.
+
+Grupo                              N    % atual         Meta Estado                      
+------------------------------------------------------------------------------------------
+Livros                           443      24.8%          30% -5.2 pp abaixo da meta      
+Mensagens Bíblicas               102       5.7%          14% -8.3 pp abaixo da meta      
+Leituras                         214      12.0%          10% +2.0 pp acima da meta       
+Base de Conhecimento             320      17.9%          22% -4.1 pp abaixo da meta      
+Sintéticos                       580      32.4%          10% +22.4 pp acima da meta      
+Registros                        129       7.2%          14% -6.8 pp abaixo da meta      
+Não classificado                   0       0.0%            — —                           
+------------------------------------------------------------------------------------------
+Total                           1788     100.0%            — —                           
+
+Detalhe — subpastas (2.º nível):
+------------------------------------------------------------------------------------------
+livros/
+  └─ biblia/                                  279  ( 63.0% do grupo Livros)
+  └─ cartas_de_cristo/                        164  ( 37.0% do grupo Livros)
+
+registros/
+  └─ core/                                     71  ( 55.0% do grupo Registros)
+  └─ eventos_unicos/                           58  ( 45.0% do grupo Registros)
+
+Metas fixas (referência; somam 100% com os seis grupos mapeados):
+  Livros — fundação teológica e mística (espinha dorsal).
+  Mensagens Bíblicas — tom religioso e aplicação pastoral.
+  Leituras — diagnóstico energético (complemento).
+  Base de Conhecimento — fragmentos, P&R, temas nomeados.
+  Sintéticos — dados gerados/derivados (ex.: mapas sintéticos, padrões de auto-cuidado).
+  Registros — presença dialógica, figuras transitórias, eventos únicos de campo.
+
+Mapeamento de pastas (data/exports):
+  livros/                  → Livros
+  mensagens_biblicas/      → Mensagens Bíblicas
+  leituras_de_campo/       → Leituras
+  base_de_conhecimento/    → Base de Conhecimento
+  sinteticos/              → Sintéticos
+  registros/               → Registros (subpastas ex.: core/, eventos_unicos/)
+
+Ficheiro: /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/estatistico/relatorio_proporcoes_grupos.txt
+
+============================================================================
+Leitura anterior (histórico; preservada ao voltar a executar o script)
+============================================================================
+
+Proporção de itens por grupo editorial — CURADORIA GPT MANUAL
+============================================================
+Gerado em: 2026-04-20 10:39:43
+Pasta analisada: /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/exports
+Total de itens (turnos user+assistant): 1752
+
+Métrica: número de turnos por grupo editorial, em % do total de turnos.
+Cada par user+assistant válido conta 1 item; uma linha JSONL pode gerar vários.
+
+Grupo                              N    % atual         Meta Estado                      
+------------------------------------------------------------------------------------------
+Livros                           443      25.3%          30% -4.7 pp abaixo da meta      
+Mensagens Bíblicas               102       5.8%          14% -8.2 pp abaixo da meta      
+Leituras                         178      10.2%          10% +0.2 pp acima da meta       
+Base de Conhecimento             320      18.3%          22% -3.7 pp abaixo da meta      
+Sintéticos                       580      33.1%          10% +23.1 pp acima da meta      
+Registros                        129       7.4%          14% -6.6 pp abaixo da meta      
+Não classificado                   0       0.0%            — —                           
+------------------------------------------------------------------------------------------
+Total                           1752     100.0%            — —                  
+
+
+Grupo                              N    % atual         Meta Estado                      
+------------------------------------------------------------------------------------------
+Livros                           443      27.6%          30% -2.4 pp abaixo da meta      
+Mensagens Bíblicas               102       6.4%          14% -7.6 pp abaixo da meta      
+Leituras                         105       6.6%          10% -3.4 pp abaixo da meta      
+Base de Conhecimento             296      18.5%          22% -3.5 pp abaixo da meta      
+Sintéticos                       545      34.0%          10% +24.0 pp acima da meta      
+Registros                        112       7.0%          14% -7.0 pp abaixo da meta      
+Não classificado                   0       0.0%            — —                           
+------------------------------------------------------------------------------------------
+Total                           1603     100.0%            — —         
+
+
+
+Detalhe — subpastas (2.º nível):
+------------------------------------------------------------------------------------------
+livros/
+  └─ biblia/                                  279  ( 63.0% do grupo Livros)
+  └─ cartas_de_cristo/                        164  ( 37.0% do grupo Livros)
+
+registros/
+  └─ core/                                     71  ( 55.0% do grupo Registros)
+  └─ eventos_unicos/                           58  ( 45.0% do grupo Registros)
+
+Metas fixas (referência; somam 100% com os seis grupos mapeados):
+  Livros — fundação teológica e mística (espinha dorsal).
+  Mensagens Bíblicas — tom religioso e aplicação pastoral.
+  Leituras — diagnóstico energético (complemento).
+  Base de Conhecimento — fragmentos, P&R, temas nomeados.
+  Sintéticos — dados gerados/derivados (ex.: mapas sintéticos, padrões de auto-cuidado).
+  Registros — presença dialógica, figuras transitórias, eventos únicos de campo.
+
+Mapeamento de pastas (data/exports):
+  livros/                  → Livros
+  mensagens_biblicas/      → Mensagens Bíblicas
+  leituras_de_campo/       → Leituras
+  base_de_conhecimento/    → Base de Conhecimento
+  sinteticos/              → Sintéticos
+  registros/               → Registros (subpastas ex.: core/, eventos_unicos/)
+
+Ficheiro: /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/estatistico/relatorio_proporcoes_grupos.txt

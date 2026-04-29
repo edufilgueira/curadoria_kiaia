@@ -1,0 +1,236 @@
+Relatório de tokens — CURADORIA GPT MANUAL
+============================================================
+Gerado em: 2026-04-22 11:34:14  (volte a executar o script após alterar qualquer .jsonl)
+Pasta analisada (recursiva): /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/exports
+Ficheiros .jsonl: 49
+Itens (turnos user+assistant) contabilizados: 1945
+Linhas JSONL ignoradas (JSON inválido): 0
+Linhas JSONL sem par user+assistant: 0
+Encoding: tiktoken cl100k_base
+
+Totais acumulados (todos os turnos):
+  Tokens user (soma):     259753
+  Tokens assistant (soma): 526444
+
+O que a tabela «Classificação» mede:
+  • Cada par consecutivo user → assistant em ``messages`` = 1 turno (1 unidade).
+  • Uma linha JSONL pode conter vários turnos; cada um é classificado à parte.
+  • «Curta (80–200)» etc. = faixas pelo TAMANHO da resposta assistant (tokens) naquele turno.
+  • N e % atual = quantos TURNOS caem em cada faixa (percentagem sobre o nº de turnos).
+    Não é percentagem de «tokens totais do dataset» por faixa.
+  • Ao apagar linhas num .jsonl, guarde o ficheiro e execute: python exportacao_estatisticas_tokens.py
+    — a leitura anterior deste ficheiro desce no histórico (não é apagada).
+
+Classificação por tokens do ASSISTANT (por turno):
+  (A tabela de metas aplica-se à distribuição do comprimento das respostas.)
+
+Classificação                                 N    % atual     % meta        Δ
+----------------------------------------------------------------------------
+Abaixo de 80 (fora da tabela inferior)      496      25.5%          —        —
+Curta (80 – 200)                            641      33.0%      35.0%    -2.0pp
+Média (201 – 500)                           481      24.7%      30.0%    -5.3pp
+Longa (501 – 800)                           170       8.7%      30.0%   -21.3pp
+Muito longa (801+)                          157       8.1%       5.0%    +3.1pp
+----------------------------------------------------------------------------
+Total                                      1945     100.0%          —        —
+
+Função (referência):
+  Curta:       precisão, impacto, respostas rápidas
+  Média:       base principal de profundidade
+  Longa:       leituras mais completas
+  Muito longa: casos especiais (campo aberto, narrativas)
+
+Notas:
+  • % meta (40 / 35 / 20 / 5) refere-se apenas às quatro faixas centrais;
+    turnos «Abaixo de 80» não entram nessa proporção alvo.
+  • Para aproximar o dataset das metas, ajuste amostragem ou reescreva
+    respostas para concentrar mais turnos nas faixas desejadas.
+
+Ficheiros gerados em: /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/estatistico
+  - tokens_por_linha.jsonl
+  - relatorio_distribuicao_token.txt
+  - relatorio_proporcoes_grupos.txt
+
+============================================================================
+Leitura anterior (histórico; preservada ao voltar a executar o script)
+============================================================================
+
+Relatório de tokens — CURADORIA GPT MANUAL
+============================================================
+Gerado em: 2026-04-20 19:22:40  (volte a executar o script após alterar qualquer .jsonl)
+Pasta analisada (recursiva): /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/exports
+Ficheiros .jsonl: 43
+Itens (turnos user+assistant) contabilizados: 1788
+Linhas JSONL ignoradas (JSON inválido): 0
+Linhas JSONL sem par user+assistant: 0
+Encoding: tiktoken cl100k_base
+
+Totais acumulados (todos os turnos):
+  Tokens user (soma):     256263
+  Tokens assistant (soma): 506305
+
+O que a tabela «Classificação» mede:
+  • Cada par consecutivo user → assistant em ``messages`` = 1 turno (1 unidade).
+  • Uma linha JSONL pode conter vários turnos; cada um é classificado à parte.
+  • «Curta (80–200)» etc. = faixas pelo TAMANHO da resposta assistant (tokens) naquele turno.
+  • N e % atual = quantos TURNOS caem em cada faixa (percentagem sobre o nº de turnos).
+    Não é percentagem de «tokens totais do dataset» por faixa.
+  • Ao apagar linhas num .jsonl, guarde o ficheiro e execute: python exportacao_estatisticas_tokens.py
+    — a leitura anterior deste ficheiro desce no histórico (não é apagada).
+
+Classificação por tokens do ASSISTANT (por turno):
+  (A tabela de metas aplica-se à distribuição do comprimento das respostas.)
+
+Classificação                                 N    % atual     % meta        Δ
+----------------------------------------------------------------------------
+Abaixo de 80 (fora da tabela inferior)      425      23.8%          —        —
+Curta (80 – 200)                            568      31.8%      35.0%    -3.2pp
+Média (201 – 500)                           476      26.6%      30.0%    -3.4pp
+Longa (501 – 800)                           166       9.3%      30.0%   -20.7pp
+Muito longa (801+)                          153       8.6%       5.0%    +3.6pp
+----------------------------------------------------------------------------
+Total                                      1788     100.0%          —        —
+
+
+
+Função (referência):
+  Curta:       precisão, impacto, respostas rápidas
+  Média:       base principal de profundidade
+  Longa:       leituras mais completas
+  Muito longa: casos especiais (campo aberto, narrativas)
+
+Notas:
+  • % meta (40 / 35 / 20 / 5) refere-se apenas às quatro faixas centrais;
+    turnos «Abaixo de 80» não entram nessa proporção alvo.
+  • Para aproximar o dataset das metas, ajuste amostragem ou reescreva
+    respostas para concentrar mais turnos nas faixas desejadas.
+
+Ficheiros gerados em: /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/estatistico
+  - tokens_por_linha.jsonl
+  - relatorio_distribuicao_token.txt
+  - relatorio_proporcoes_grupos.txt
+
+============================================================================
+Leitura anterior (histórico; preservada ao voltar a executar o script)
+============================================================================
+
+Relatório de tokens — CURADORIA GPT MANUAL
+============================================================
+Gerado em: 2026-04-20 19:22:15  (volte a executar o script após alterar qualquer .jsonl)
+Pasta analisada (recursiva): /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/exports
+Ficheiros .jsonl: 43
+Itens (turnos user+assistant) contabilizados: 1788
+Linhas JSONL ignoradas (JSON inválido): 0
+Linhas JSONL sem par user+assistant: 0
+Encoding: tiktoken cl100k_base
+
+Totais acumulados (todos os turnos):
+  Tokens user (soma):     256263
+  Tokens assistant (soma): 506305
+
+O que a tabela «Classificação» mede:
+  • Cada par consecutivo user → assistant em ``messages`` = 1 turno (1 unidade).
+  • Uma linha JSONL pode conter vários turnos; cada um é classificado à parte.
+  • «Curta (80–200)» etc. = faixas pelo TAMANHO da resposta assistant (tokens) naquele turno.
+  • N e % atual = quantos TURNOS caem em cada faixa (percentagem sobre o nº de turnos).
+    Não é percentagem de «tokens totais do dataset» por faixa.
+  • Ao apagar linhas num .jsonl, guarde o ficheiro e execute: python exportacao_estatisticas_tokens.py
+    — a leitura anterior deste ficheiro desce no histórico (não é apagada).
+
+Classificação por tokens do ASSISTANT (por turno):
+  (A tabela de metas aplica-se à distribuição do comprimento das respostas.)
+
+Classificação                                 N    % atual     % meta        Δ
+----------------------------------------------------------------------------
+Abaixo de 80 (fora da tabela inferior)      425      23.8%          —        —
+Curta (80 – 200)                            568      31.8%      35.0%    -3.2pp
+Média (201 – 500)                           476      26.6%      30.0%    -3.4pp
+Longa (501 – 800)                           166       9.3%      30.0%   -20.7pp
+Muito longa (801+)                          153       8.6%       5.0%    +3.6pp
+----------------------------------------------------------------------------
+Total                                      1788     100.0%          —        —
+
+Função (referência):
+  Curta:       precisão, impacto, respostas rápidas
+  Média:       base principal de profundidade
+  Longa:       leituras mais completas
+  Muito longa: casos especiais (campo aberto, narrativas)
+
+Notas:
+  • % meta (40 / 35 / 20 / 5) refere-se apenas às quatro faixas centrais;
+    turnos «Abaixo de 80» não entram nessa proporção alvo.
+  • Para aproximar o dataset das metas, ajuste amostragem ou reescreva
+    respostas para concentrar mais turnos nas faixas desejadas.
+
+Ficheiros gerados em: /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/estatistico
+  - tokens_por_linha.jsonl
+  - relatorio_distribuicao_token.txt
+  - relatorio_proporcoes_grupos.txt
+
+============================================================================
+Leitura anterior (histórico; preservada ao voltar a executar o script)
+============================================================================
+
+Relatório de tokens — CURADORIA GPT MANUAL
+============================================================
+Gerado em: 2026-04-20 10:39:43  (volte a executar o script após alterar qualquer .jsonl)
+Pasta analisada (recursiva): /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/exports
+Ficheiros .jsonl: 43
+Itens (turnos user+assistant) contabilizados: 1752
+Linhas JSONL ignoradas (JSON inválido): 0
+Linhas JSONL sem par user+assistant: 0
+Encoding: tiktoken cl100k_base
+
+Totais acumulados (todos os turnos):
+  Tokens user (soma):     250639
+  Tokens assistant (soma): 480281
+
+O que a tabela «Classificação» mede:
+  • Cada par consecutivo user → assistant em ``messages`` = 1 turno (1 unidade).
+  • Uma linha JSONL pode conter vários turnos; cada um é classificado à parte.
+  • «Curta (80–200)» etc. = faixas pelo TAMANHO da resposta assistant (tokens) naquele turno.
+  • N e % atual = quantos TURNOS caem em cada faixa (percentagem sobre o nº de turnos).
+    Não é percentagem de «tokens totais do dataset» por faixa.
+  • Ao apagar linhas num .jsonl, guarde o ficheiro e execute: python exportacao_estatisticas_tokens.py
+    — sem isso, este relatório permanece o da última geração.
+
+Classificação por tokens do ASSISTANT (por turno):
+  (A tabela de metas aplica-se à distribuição do comprimento das respostas.)
+
+Classificação                                 N    % atual     % meta        Δ
+----------------------------------------------------------------------------
+Abaixo de 80 (fora da tabela inferior)      425      24.3%          —        —
+Curta (80 – 200)                            568      32.4%      35.0%    -2.6pp
+Média (201 – 500)                           468      26.7%      30.0%    -3.3pp
+Longa (501 – 800)                           155       8.8%      30.0%   -21.2pp
+Muito longa (801+)                          136       7.8%       5.0%    +2.8pp
+----------------------------------------------------------------------------
+Total                                      1752     100.0%          —        —
+
+
+Classificação                                 N    % atual     % meta        Δ
+----------------------------------------------------------------------------
+Abaixo de 80 (fora da tabela inferior)      390      24.3%          —        —
+Curta (80 – 200)                            554      34.6%      35.0%    -0.4pp
+Média (201 – 500)                           394      24.6%      30.0%    -5.4pp
+Longa (501 – 800)                            99       6.2%      30.0%   -23.8pp
+Muito longa (801+)                          166      10.4%       5.0%    +5.4pp
+----------------------------------------------------------------------------
+Total                                      1603     100.0%          —        —
+
+Função (referência):
+  Curta:       precisão, impacto, respostas rápidas
+  Média:       base principal de profundidade
+  Longa:       leituras mais completas
+  Muito longa: casos especiais (campo aberto, narrativas)
+
+Notas:
+  • % meta (40 / 35 / 20 / 5) refere-se apenas às quatro faixas centrais;
+    turnos «Abaixo de 80» não entram nessa proporção alvo.
+  • Para aproximar o dataset das metas, ajuste amostragem ou reescreva
+    respostas para concentrar mais turnos nas faixas desejadas.
+
+Ficheiros gerados em: /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/estatistico
+  - tokens_por_linha.jsonl
+  - relatorio_distribuicao_token.txt
+  - relatorio_proporcoes_grupos.txt

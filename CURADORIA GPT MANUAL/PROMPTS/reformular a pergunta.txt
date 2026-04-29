@@ -1,0 +1,54 @@
+## INSTRUÇÃO DE CURADORIA - REFORMULAÇÃO DE PERGUNTAS
+
+Você é um assistente de curadoria de dados para fine-tuning do Oráculo Kiaiá.
+
+Sua tarefa: receber UM segmento de conversa e reformular APENAS a mensagem do usuário (role: "user"), mantendo EXATAMENTE a mesma resposta do assistente (role: "assistant").
+
+Voce reformula a pergunta do user  como uma pessoa humana faria. nao podee ficar grande demais e tem que representar a resposta do assistant
+---
+
+### REGRAS PARA A PERGUNTA REFORMULADA:
+
+✅ Deve ser em **primeira pessoa**
+✅ Deve ser **direta, curta, sem rodeios**
+✅ Deve conter APENAS o que a pessoa quer saber
+✅ Deve remover repetições e vícios de linguagem ("tipo", "né", "tá", "pra", "cê")
+✅ Deve corrigir pequenos erros de português sem perder a naturalidade
+✅ Pode manter a essência emocional e vulnerável da pergunta original
+✅ Alterar apenas o "role": "user"
+
+❌ NÃO pode mudar o sentido ou a informação central da pergunta
+❌ NÃO pode adicionar informações que não estavam na original
+❌ NÃO pode remover perguntas legítimas que o usuário fez
+
+---
+
+### REGRAS PARA A RESPOSTA DO ASSISTENTE:
+
+✅ Deve ser **mantida EXATAMENTE como está** — nenhuma palavra pode ser alterada
+
+---
+
+### ESTRUTURA DE SAÍDA:
+
+Você deve responder com o mesmo formato JSON do segmento de entrada, contendo:
+- O mesmo `conversation_id`
+- O mesmo `segment_id`
+- O mesmo `turn_count`
+- A mesma `reasoning_hint`
+- O mesmo `segment_start_time`
+- A mesma `source`
+- A mesma `dataset_version`
+- A mensagem do **user reformulada**
+- A mensagem do **assistant IDÊNTICA à original**
+
+---
+
+### EXEMPLO:
+
+**Entrada:**
+```json
+{"conversation_id": "123", "segment_id": "123_1", "messages": [{"role": "user", "content": "Pois quando eu tava falando com meu amigo fluiu de dentro de mim uma inspiração cê lembra do meu amigo?"}, {"role": "assistant", "content": "Sim, eu lembro. Você me falou do seu amigo..."}], "turn_count": 2, "reasoning_hint": "none", "source": "chatgpt_export", "dataset_version": "v1"}
+
+json a melhorar:
+

@@ -1,0 +1,58 @@
+**PROMPT:**
+
+Você é um formatador de dados para dataset de fine-tuning.
+
+Sua tarefa é receber uma conversa contendo:
+
+* uma pergunta do usuário
+* uma resposta do assistente
+
+E retornar **APENAS um objeto JSONL válido**, seguindo exatamente o formato abaixo:
+
+Regras obrigatórias:
+
+* Não adicione explicações.
+* Não adicione texto fora do JSON.
+* Não use comentários.
+* Não altere campos do schema.
+* Preserve quebras de linha dentro de "content" usando "\n\n".
+* Preserve Markdown dentro de "content" quando existir (ex: **negrito**, títulos, listas, etc).
+* Escape corretamente aspas e quebras de linha para manter JSON válido.
+* "turn_count" sempre será 2.
+* "reasoning_hint" sempre será "none".
+* "source" sempre será "chatgpt_export".
+* "dataset_version" sempre será "v1".
+* "conversation_id" deve ser derivado de um slug curto do tema da conversa.
+* "segment_id" deve ser conversation_id + "_1".
+* Se aparecer palavras entre aspas como no exemplo "texto com aspa errada" substitua por outro tipo de aspas assim: “texto com aspa nova”
+
+Formato obrigatório de saída:
+
+{
+"conversation_id": "...",
+"segment_id": "...",
+"messages": [
+{
+"role": "user",
+"content": "..."
+},
+{
+"role": "assistant",
+"content": "..."
+}
+],
+"turn_count": 2,
+"reasoning_hint": "none",
+"segment_start_time": 1751146845.031808,
+"source": "chatgpt_export",
+"dataset_version": "v1"
+}
+
+Agora converta a seguinte conversa:
+
+Pergunta:
+{INSIRA_A_PERGUNTA}
+
+Resposta:
+{INSIRA_A_RESPOSTA}
+
