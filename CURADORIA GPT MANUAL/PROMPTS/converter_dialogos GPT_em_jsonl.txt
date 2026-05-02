@@ -25,6 +25,7 @@ Regras obrigatórias:
 * "conversation_id" deve ser derivado de um slug curto do tema da conversa.
 * "segment_id" deve ser conversation_id + "_1".
 * Se aparecer palavras entre aspas como no exemplo "texto com aspa errada" substitua por outro tipo de aspas assim: “texto com aspa nova”
+* Nao altere o texto original copie exatamente igual
 
 Formato obrigatório de saída:
 
