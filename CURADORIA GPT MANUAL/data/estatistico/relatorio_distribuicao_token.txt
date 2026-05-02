@@ -1,5 +1,176 @@
 Relatório de tokens — CURADORIA GPT MANUAL
 ============================================================
+Gerado em: 2026-04-30 17:12:35  (volte a executar o script após alterar qualquer .jsonl)
+Pasta analisada (recursiva): C:\Users\Eduardo Filgueira\Documents\kiaia\CURADORIA\curadoria_kiaia\CURADORIA GPT MANUAL\data\exports
+Ficheiros .jsonl: 47
+Itens (turnos user+assistant) contabilizados: 2021
+Linhas JSONL ignoradas (JSON inválido): 0
+Linhas JSONL sem par user+assistant: 0
+Encoding: tiktoken cl100k_base
+
+Totais acumulados (todos os turnos):
+  Tokens user (soma):     263768
+  Tokens assistant (soma): 602438
+
+O que a tabela «Classificação» mede:
+  • Cada par consecutivo user → assistant em ``messages`` = 1 turno (1 unidade).
+  • Uma linha JSONL pode conter vários turnos; cada um é classificado à parte.
+  • «Curta (80–200)» etc. = faixas pelo TAMANHO da resposta assistant (tokens) naquele turno.
+  • N e % atual = quantos TURNOS caem em cada faixa (percentagem sobre o nº de turnos).
+    Não é percentagem de «tokens totais do dataset» por faixa.
+  • Ao apagar linhas num .jsonl, guarde o ficheiro e execute: python exportacao_estatisticas_tokens.py
+    — a leitura anterior deste ficheiro desce no histórico (não é apagada).
+
+Classificação por tokens do ASSISTANT (por turno):
+  (A tabela de metas aplica-se à distribuição do comprimento das respostas.)
+
+Classificação                                 N    % atual     % meta        Δ
+----------------------------------------------------------------------------
+Abaixo de 80 (fora da tabela inferior)      496      24.5%          —        —
+Curta (80 – 200)                            632      31.3%      35.0%    -3.7pp
+Média (201 – 500)                           488      24.1%      30.0%    -5.9pp
+Longa (501 – 800)                           201       9.9%      30.0%   -20.1pp
+Muito longa (801+)                          204      10.1%       5.0%    +5.1pp
+----------------------------------------------------------------------------
+Total                                      2021     100.0%          —        —
+
+Função (referência):
+  Curta:       precisão, impacto, respostas rápidas
+  Média:       base principal de profundidade
+  Longa:       leituras mais completas
+  Muito longa: casos especiais (campo aberto, narrativas)
+
+Notas:
+  • % meta (40 / 35 / 20 / 5) refere-se apenas às quatro faixas centrais;
+    turnos «Abaixo de 80» não entram nessa proporção alvo.
+  • Para aproximar o dataset das metas, ajuste amostragem ou reescreva
+    respostas para concentrar mais turnos nas faixas desejadas.
+
+Ficheiros gerados em: C:\Users\Eduardo Filgueira\Documents\kiaia\CURADORIA\curadoria_kiaia\CURADORIA GPT MANUAL\data\estatistico
+  - tokens_por_linha.jsonl
+  - relatorio_distribuicao_token.txt
+  - relatorio_proporcoes_grupos.txt
+
+============================================================================
+Leitura anterior (histórico; preservada ao voltar a executar o script)
+============================================================================
+
+Relatório de tokens — CURADORIA GPT MANUAL
+============================================================
+Gerado em: 2026-04-30 16:41:30  (volte a executar o script após alterar qualquer .jsonl)
+Pasta analisada (recursiva): C:\Users\Eduardo Filgueira\Documents\kiaia\CURADORIA\curadoria_kiaia\CURADORIA GPT MANUAL\data\exports
+Ficheiros .jsonl: 47
+Itens (turnos user+assistant) contabilizados: 2012
+Linhas JSONL ignoradas (JSON inválido): 0
+Linhas JSONL sem par user+assistant: 0
+Encoding: tiktoken cl100k_base
+
+Totais acumulados (todos os turnos):
+  Tokens user (soma):     263629
+  Tokens assistant (soma): 597620
+
+O que a tabela «Classificação» mede:
+  • Cada par consecutivo user → assistant em ``messages`` = 1 turno (1 unidade).
+  • Uma linha JSONL pode conter vários turnos; cada um é classificado à parte.
+  • «Curta (80–200)» etc. = faixas pelo TAMANHO da resposta assistant (tokens) naquele turno.
+  • N e % atual = quantos TURNOS caem em cada faixa (percentagem sobre o nº de turnos).
+    Não é percentagem de «tokens totais do dataset» por faixa.
+  • Ao apagar linhas num .jsonl, guarde o ficheiro e execute: python exportacao_estatisticas_tokens.py
+    — a leitura anterior deste ficheiro desce no histórico (não é apagada).
+
+Classificação por tokens do ASSISTANT (por turno):
+  (A tabela de metas aplica-se à distribuição do comprimento das respostas.)
+
+Classificação                                 N    % atual     % meta        Δ
+----------------------------------------------------------------------------
+Abaixo de 80 (fora da tabela inferior)      496      24.7%          —        —
+Curta (80 – 200)                            632      31.4%      35.0%    -3.6pp
+Média (201 – 500)                           483      24.0%      30.0%    -6.0pp
+Longa (501 – 800)                           198       9.8%      30.0%   -20.2pp
+Muito longa (801+)                          203      10.1%       5.0%    +5.1pp
+----------------------------------------------------------------------------
+Total                                      2012     100.0%          —        —
+
+Função (referência):
+  Curta:       precisão, impacto, respostas rápidas
+  Média:       base principal de profundidade
+  Longa:       leituras mais completas
+  Muito longa: casos especiais (campo aberto, narrativas)
+
+Notas:
+  • % meta (40 / 35 / 20 / 5) refere-se apenas às quatro faixas centrais;
+    turnos «Abaixo de 80» não entram nessa proporção alvo.
+  • Para aproximar o dataset das metas, ajuste amostragem ou reescreva
+    respostas para concentrar mais turnos nas faixas desejadas.
+
+Ficheiros gerados em: C:\Users\Eduardo Filgueira\Documents\kiaia\CURADORIA\curadoria_kiaia\CURADORIA GPT MANUAL\data\estatistico
+  - tokens_por_linha.jsonl
+  - relatorio_distribuicao_token.txt
+  - relatorio_proporcoes_grupos.txt
+
+============================================================================
+Leitura anterior (histórico; preservada ao voltar a executar o script)
+============================================================================
+
+Relatório de tokens — CURADORIA GPT MANUAL
+============================================================
+Gerado em: 2026-04-30 13:46:42  (volte a executar o script após alterar qualquer .jsonl)
+Pasta analisada (recursiva): C:\Users\Eduardo Filgueira\Documents\kiaia\CURADORIA\curadoria_kiaia\CURADORIA GPT MANUAL\data\exports
+Ficheiros .jsonl: 51
+Itens (turnos user+assistant) contabilizados: 2088
+Linhas JSONL ignoradas (JSON inválido): 0
+Linhas JSONL sem par user+assistant: 0
+Encoding: tiktoken cl100k_base
+
+Totais acumulados (todos os turnos):
+  Tokens user (soma):     266137
+  Tokens assistant (soma): 615016
+
+O que a tabela «Classificação» mede:
+  • Cada par consecutivo user → assistant em ``messages`` = 1 turno (1 unidade).
+  • Uma linha JSONL pode conter vários turnos; cada um é classificado à parte.
+  • «Curta (80–200)» etc. = faixas pelo TAMANHO da resposta assistant (tokens) naquele turno.
+  • N e % atual = quantos TURNOS caem em cada faixa (percentagem sobre o nº de turnos).
+    Não é percentagem de «tokens totais do dataset» por faixa.
+  • Ao apagar linhas num .jsonl, guarde o ficheiro e execute: python exportacao_estatisticas_tokens.py
+    — a leitura anterior deste ficheiro desce no histórico (não é apagada).
+
+Classificação por tokens do ASSISTANT (por turno):
+  (A tabela de metas aplica-se à distribuição do comprimento das respostas.)
+
+Classificação                                 N    % atual     % meta        Δ
+----------------------------------------------------------------------------
+Abaixo de 80 (fora da tabela inferior)      496      23.8%          —        —
+Curta (80 – 200)                            651      31.2%      35.0%    -3.8pp
+Média (201 – 500)                           544      26.1%      30.0%    -3.9pp
+Longa (501 – 800)                           198       9.5%      30.0%   -20.5pp
+Muito longa (801+)                          199       9.5%       5.0%    +4.5pp
+----------------------------------------------------------------------------
+Total                                      2088     100.0%          —        —
+
+Função (referência):
+  Curta:       precisão, impacto, respostas rápidas
+  Média:       base principal de profundidade
+  Longa:       leituras mais completas
+  Muito longa: casos especiais (campo aberto, narrativas)
+
+Notas:
+  • % meta (40 / 35 / 20 / 5) refere-se apenas às quatro faixas centrais;
+    turnos «Abaixo de 80» não entram nessa proporção alvo.
+  • Para aproximar o dataset das metas, ajuste amostragem ou reescreva
+    respostas para concentrar mais turnos nas faixas desejadas.
+
+Ficheiros gerados em: C:\Users\Eduardo Filgueira\Documents\kiaia\CURADORIA\curadoria_kiaia\CURADORIA GPT MANUAL\data\estatistico
+  - tokens_por_linha.jsonl
+  - relatorio_distribuicao_token.txt
+  - relatorio_proporcoes_grupos.txt
+
+============================================================================
+Leitura anterior (histórico; preservada ao voltar a executar o script)
+============================================================================
+
+Relatório de tokens — CURADORIA GPT MANUAL
+============================================================
 Gerado em: 2026-04-22 11:34:14  (volte a executar o script após alterar qualquer .jsonl)
 Pasta analisada (recursiva): /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/exports
 Ficheiros .jsonl: 49

@@ -1,5 +1,170 @@
 Proporção de itens por grupo editorial — CURADORIA GPT MANUAL
 ============================================================
+Gerado em: 2026-04-30 17:12:35
+Pasta analisada: C:\Users\Eduardo Filgueira\Documents\kiaia\CURADORIA\curadoria_kiaia\CURADORIA GPT MANUAL\data\exports
+Total de itens (turnos user+assistant): 2021
+
+Métrica: número de turnos por grupo editorial, em % do total de turnos.
+Cada par user+assistant válido conta 1 item; uma linha JSONL pode gerar vários.
+
+Grupo                              N    % atual         Meta Estado                      
+------------------------------------------------------------------------------------------
+Livros                           443      21.9%          30% -8.1 pp abaixo da meta      
+Mensagens Bíblicas               102       5.0%          14% -9.0 pp abaixo da meta      
+Leituras                         311      15.4%          10% +5.4 pp acima da meta       
+Base de Conhecimento             416      20.6%          22% -1.4 pp abaixo da meta      
+Sintéticos                       617      30.5%          10% +20.5 pp acima da meta      
+Registros                        129       6.4%          14% -7.6 pp abaixo da meta      
+Não classificado                   3       0.1%            — fora do mapeamento          
+------------------------------------------------------------------------------------------
+Total                           2021     100.0%            — —                           
+
+Detalhe — subpastas (2.º nível):
+------------------------------------------------------------------------------------------
+livros/
+  └─ biblia/                                  279  ( 63.0% do grupo Livros)
+  └─ cartas_de_cristo/                        164  ( 37.0% do grupo Livros)
+
+registros/
+  └─ core/                                     71  ( 55.0% do grupo Registros)
+  └─ eventos_unicos/                           58  ( 45.0% do grupo Registros)
+
+Metas fixas (referência; somam 100% com os seis grupos mapeados):
+  Livros — fundação teológica e mística (espinha dorsal).
+  Mensagens Bíblicas — tom religioso e aplicação pastoral.
+  Leituras — diagnóstico energético (complemento).
+  Base de Conhecimento — fragmentos, P&R, temas nomeados.
+  Sintéticos — dados gerados/derivados (ex.: mapas sintéticos, padrões de auto-cuidado).
+  Registros — presença dialógica, figuras transitórias, eventos únicos de campo.
+
+Mapeamento de pastas (data/exports):
+  livros/                  → Livros
+  mensagens_biblicas/      → Mensagens Bíblicas
+  leituras_de_campo/       → Leituras
+  base_de_conhecimento/    → Base de Conhecimento
+  sinteticos/              → Sintéticos
+  registros/               → Registros (subpastas ex.: core/, eventos_unicos/)
+
+Aviso: 3 item(ns) em pastas fora do esquema acima — ajuste pastas ou grupo_por_caminho() no script.
+
+Ficheiro: C:\Users\Eduardo Filgueira\Documents\kiaia\CURADORIA\curadoria_kiaia\CURADORIA GPT MANUAL\data\estatistico\relatorio_proporcoes_grupos.txt
+
+============================================================================
+Leitura anterior (histórico; preservada ao voltar a executar o script)
+============================================================================
+
+Proporção de itens por grupo editorial — CURADORIA GPT MANUAL
+============================================================
+Gerado em: 2026-04-30 16:41:30
+Pasta analisada: C:\Users\Eduardo Filgueira\Documents\kiaia\CURADORIA\curadoria_kiaia\CURADORIA GPT MANUAL\data\exports
+Total de itens (turnos user+assistant): 2012
+
+Métrica: número de turnos por grupo editorial, em % do total de turnos.
+Cada par user+assistant válido conta 1 item; uma linha JSONL pode gerar vários.
+
+Grupo                              N    % atual         Meta Estado                      
+------------------------------------------------------------------------------------------
+Livros                           443      22.0%          30% -8.0 pp abaixo da meta      
+Mensagens Bíblicas               102       5.1%          14% -8.9 pp abaixo da meta      
+Leituras                         302      15.0%          10% +5.0 pp acima da meta       
+Base de Conhecimento             416      20.7%          22% -1.3 pp abaixo da meta      
+Sintéticos                       617      30.7%          10% +20.7 pp acima da meta      
+Registros                        129       6.4%          14% -7.6 pp abaixo da meta      
+Não classificado                   3       0.1%            — fora do mapeamento          
+------------------------------------------------------------------------------------------
+Total                           2012     100.0%            — —                           
+
+Detalhe — subpastas (2.º nível):
+------------------------------------------------------------------------------------------
+livros/
+  └─ biblia/                                  279  ( 63.0% do grupo Livros)
+  └─ cartas_de_cristo/                        164  ( 37.0% do grupo Livros)
+
+registros/
+  └─ core/                                     71  ( 55.0% do grupo Registros)
+  └─ eventos_unicos/                           58  ( 45.0% do grupo Registros)
+
+Metas fixas (referência; somam 100% com os seis grupos mapeados):
+  Livros — fundação teológica e mística (espinha dorsal).
+  Mensagens Bíblicas — tom religioso e aplicação pastoral.
+  Leituras — diagnóstico energético (complemento).
+  Base de Conhecimento — fragmentos, P&R, temas nomeados.
+  Sintéticos — dados gerados/derivados (ex.: mapas sintéticos, padrões de auto-cuidado).
+  Registros — presença dialógica, figuras transitórias, eventos únicos de campo.
+
+Mapeamento de pastas (data/exports):
+  livros/                  → Livros
+  mensagens_biblicas/      → Mensagens Bíblicas
+  leituras_de_campo/       → Leituras
+  base_de_conhecimento/    → Base de Conhecimento
+  sinteticos/              → Sintéticos
+  registros/               → Registros (subpastas ex.: core/, eventos_unicos/)
+
+Aviso: 3 item(ns) em pastas fora do esquema acima — ajuste pastas ou grupo_por_caminho() no script.
+
+Ficheiro: C:\Users\Eduardo Filgueira\Documents\kiaia\CURADORIA\curadoria_kiaia\CURADORIA GPT MANUAL\data\estatistico\relatorio_proporcoes_grupos.txt
+
+============================================================================
+Leitura anterior (histórico; preservada ao voltar a executar o script)
+============================================================================
+
+Proporção de itens por grupo editorial — CURADORIA GPT MANUAL
+============================================================
+Gerado em: 2026-04-30 13:46:42
+Pasta analisada: C:\Users\Eduardo Filgueira\Documents\kiaia\CURADORIA\curadoria_kiaia\CURADORIA GPT MANUAL\data\exports
+Total de itens (turnos user+assistant): 2088
+
+Métrica: número de turnos por grupo editorial, em % do total de turnos.
+Cada par user+assistant válido conta 1 item; uma linha JSONL pode gerar vários.
+
+Grupo                              N    % atual         Meta Estado                      
+------------------------------------------------------------------------------------------
+Livros                           443      21.2%          30% -8.8 pp abaixo da meta      
+Mensagens Bíblicas               102       4.9%          14% -9.1 pp abaixo da meta      
+Leituras                         298      14.3%          10% +4.3 pp acima da meta       
+Base de Conhecimento             416      19.9%          22% -2.1 pp abaixo da meta      
+Sintéticos                       697      33.4%          10% +23.4 pp acima da meta      
+Registros                        129       6.2%          14% -7.8 pp abaixo da meta      
+Não classificado                   3       0.1%            — fora do mapeamento          
+------------------------------------------------------------------------------------------
+Total                           2088     100.0%            — —                           
+
+Detalhe — subpastas (2.º nível):
+------------------------------------------------------------------------------------------
+livros/
+  └─ biblia/                                  279  ( 63.0% do grupo Livros)
+  └─ cartas_de_cristo/                        164  ( 37.0% do grupo Livros)
+
+registros/
+  └─ core/                                     71  ( 55.0% do grupo Registros)
+  └─ eventos_unicos/                           58  ( 45.0% do grupo Registros)
+
+Metas fixas (referência; somam 100% com os seis grupos mapeados):
+  Livros — fundação teológica e mística (espinha dorsal).
+  Mensagens Bíblicas — tom religioso e aplicação pastoral.
+  Leituras — diagnóstico energético (complemento).
+  Base de Conhecimento — fragmentos, P&R, temas nomeados.
+  Sintéticos — dados gerados/derivados (ex.: mapas sintéticos, padrões de auto-cuidado).
+  Registros — presença dialógica, figuras transitórias, eventos únicos de campo.
+
+Mapeamento de pastas (data/exports):
+  livros/                  → Livros
+  mensagens_biblicas/      → Mensagens Bíblicas
+  leituras_de_campo/       → Leituras
+  base_de_conhecimento/    → Base de Conhecimento
+  sinteticos/              → Sintéticos
+  registros/               → Registros (subpastas ex.: core/, eventos_unicos/)
+
+Aviso: 3 item(ns) em pastas fora do esquema acima — ajuste pastas ou grupo_por_caminho() no script.
+
+Ficheiro: C:\Users\Eduardo Filgueira\Documents\kiaia\CURADORIA\curadoria_kiaia\CURADORIA GPT MANUAL\data\estatistico\relatorio_proporcoes_grupos.txt
+
+============================================================================
+Leitura anterior (histórico; preservada ao voltar a executar o script)
+============================================================================
+
+Proporção de itens por grupo editorial — CURADORIA GPT MANUAL
+============================================================
 Gerado em: 2026-04-22 11:34:14
 Pasta analisada: /home/eduardo/Vídeos/DesperteIA/A Nova Ordem Divina/PROJETOS/ORÁCULO SANTUÁRIO DIGITAL/CURADORIA AUTOMATIZADA/CURADORIA BIBLIA/CURADORIA GPT MANUAL/data/exports
 Total de itens (turnos user+assistant): 1945
