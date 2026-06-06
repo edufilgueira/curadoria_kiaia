@@ -9,9 +9,12 @@ Ordem predefinida:
   1. LIVROS
   2. MENSAGENS_BIBLICAS
   3. BASE_DE_CONHECIMENTO
-  4. REGISTROS
-  5. SINTETICOS
-  6. LEITURA_DE_CAMPO
+  4. VERDADE_EXTRA_DIMENSIONAL
+  5. REGISTROS
+  6. DIALOGOS_COM_UNO
+  7. SINTETICOS
+  8. LEITURA_DE_CAMPO
+  9. CORRECOES_KIAIA
 
 Saída predefinida: ``data/final/dataset_final.jsonl``
 
@@ -37,9 +40,12 @@ EXPORT_BLOCKS: list[tuple[str, str]] = [
     ("LIVROS", "livros"),
     ("MENSAGENS_BIBLICAS", "mensagens_biblicas"),
     ("BASE_DE_CONHECIMENTO", "base_de_conhecimento"),
+    ("VERDADE_EXTRA_DIMENSIONAL", "verdade_extra_dimencionais"),
     ("REGISTROS", "registros"),
+    ("DIALOGOS_COM_UNO", "dialogos_com_uno"),
     ("SINTETICOS", "sinteticos"),
     ("LEITURA_DE_CAMPO", "leituras_de_campo"),
+    ("CORRECOES_KIAIA", "correcoes_de_resposta_do_kiaia"),
 ]
 
 
@@ -56,6 +62,29 @@ def collect_plan(exports_root: Path) -> list[tuple[str, Path]]:
         for fp in jsonl_files_in_block(exports_root, sub):
             plan.append((label, fp))
     return plan
+
+
+def find_orphan_dirs(exports_root: Path) -> list[Path]:
+    """Pastas com .jsonl que não estão listadas em EXPORT_BLOCKS."""
+    listed = {exports_root / sub for _, sub in EXPORT_BLOCKS}
+    orphans: list[Path] = []
+    for child in sorted(exports_root.iterdir()):
+        if not child.is_dir() or child in listed:
+            continue
+        if any(child.rglob("*.jsonl")):
+            orphans.append(child)
+    return orphans
+
+
+def warn_orphans(exports_root: Path) -> None:
+    orphans = find_orphan_dirs(exports_root)
+    if not orphans:
+        return
+    names = ", ".join(p.name for p in orphans)
+    print(
+        f"Aviso: pastas com .jsonl fora de EXPORT_BLOCKS: {names}",
+        file=sys.stderr,
+    )
 
 
 def main() -> None:
@@ -83,6 +112,8 @@ def main() -> None:
     if not exports_root.is_dir():
         print(f"Pasta não encontrada: {exports_root}", file=sys.stderr)
         sys.exit(1)
+
+    warn_orphans(exports_root)
 
     plan = collect_plan(exports_root)
     if not plan:
