@@ -37,13 +37,13 @@ DEFAULT_OUTPUT = DIR / "data" / "final" / "dataset_final.jsonl"
 
 # (rótulo para relatório, subpasta relativa a data/exports)
 EXPORT_BLOCKS: list[tuple[str, str]] = [
-    ("LIVROS", "livros"),
+    ("REGISTROS", "registros"),
     ("MENSAGENS_BIBLICAS", "mensagens_biblicas"),
+    ("LIVROS", "livros"),
+    ("SINTETICOS", "sinteticos"),
+    ("DIALOGOS_COM_UNO", "dialogos_com_uno"),
     ("BASE_DE_CONHECIMENTO", "base_de_conhecimento"),
     ("VERDADE_EXTRA_DIMENSIONAL", "verdade_extra_dimencionais"),
-    ("REGISTROS", "registros"),
-    ("DIALOGOS_COM_UNO", "dialogos_com_uno"),
-    ("SINTETICOS", "sinteticos"),
     ("LEITURA_DE_CAMPO", "leituras_de_campo"),
     ("CORRECOES_KIAIA", "correcoes_de_resposta_do_kiaia"),
 ]
